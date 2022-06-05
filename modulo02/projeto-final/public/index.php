@@ -7,13 +7,13 @@ use App\Controller\ProductController;
 
 $c = new IndexController();
 // $c->indexAction();
-// $c->loginAction();
+$c->loginAction();
 
 $p = new ProductController();
 
-$p->listAction();
-$p->addAction();
-$p->editAction();
+// $p->listAction();
+// $p->addAction();
+// $p->editAction();
 
 
 
