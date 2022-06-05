@@ -2,9 +2,19 @@
 declare (strict_types=1);
 
 namespace App\Controller;
-class CategoryController
+
+class CategoryController extends AbstractController
 {
-    public function categoryAction() {
-        echo "Olá mundo, estou dentro de uma action, dentro do controller de categorias!";
+    public function listAction(): void 
+    {
+        parent::render('category/list');
+    }
+    public function addAction(): void 
+    {
+        parent::render('category/add');
+    }
+    public function editAction(): void 
+    {
+        parent::render('category/edit');
     }
 }
